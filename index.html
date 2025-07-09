@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/arteviva.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fonte Merriweather do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>ARTEVIVA</title>
+</head>
+
+<body class="fundo">
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">ARTEVIVA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Lançamentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#carreira">Entrevistas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#albuns">TopChats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#premios">Biografias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="noticias-container">
+        <div class="noticias-main">
+            <h2>Destaques</h2>
+            <div class="grid-noticias">
+                <article class="noticia">
+                    <img src="image/travis.png" alt="Notícia 1">
+                    <h3>Travis Scott quebra recorde de streaming</h3>
+                </article>
+                <article class="noticia">
+                    <img src="image/nicki.png" alt="Notícia 2">
+                    <h3>Nicki Minaj anuncia nova turnê mundial</h3>
+                </article>
+                <article class="noticia">
+                    <img src="image/billboard.png" alt="Notícia 3">
+                    <h3>Billboard Top 10 tem cinco faixas de um único álbum</h3>
+                </article>
+                <!-- Adicione mais seções aqui -->
+            </div>
+        </div>
+
+        <aside class="sidebar-tags">
+            <h3>Tags Populares</h3>
+            <ul>
+                <li><a href="#">#Trap</a></li>
+                <li><a href="#">#R&B</a></li>
+                <li><a href="#">#Funk</a></li>
+                <li><a href="#">#Grammy</a></li>
+                <li><a href="#">#Entrevistas</a></li>
+            </ul>
+        </aside>
+    </section>
+
+
+    <div class="carousel">
+        <!-- Slides -->
+        <div class="slide active" style="background-image: url('image/univesity.png');">
+            <div class="overlay">
+                <h2>Faculdade vai oferecer curso sobre Kendrick Lamar</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('image/travis.png');">
+            <div class="overlay">
+                <h2>Travis Scott lança 1º clipe do "JACKBOYS 2" com Sheck Wes e Don Toliver</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('image/young.png');">
+            <div class="overlay">
+                <h2>Young Thug manda recado para rappers que colaboram com a polícia</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+        </div>
+        <!-- Controles -->
+        <div class="controls">
+            <button onclick="prevSlide()">❮</button>
+            <button onclick="nextSlide()">❯</button>
+        </div>
+    </div>
+    <section class="highlights">
+        <div class="container">
+            <h2 class="section-title">Trap</h2>
+            <div class="news-grid">
+                <!-- Notícia 1 -->
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400" alt="Artista em estúdio de gravação com fones de ouvido, cercado por equipamentos profissionais" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Novo álbum surpresa de artista indie quebra recordes</h3>
+                        <p>O lançamento surpresa do novo trabalho já alcançou o topo das paradas em 15 países.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+                                <article class="news-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400" alt="Festival de música ao ar livre com palco iluminado e grande multidão aplaudindo" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Festival internacional anuncia line-up com grandes nomes</h3>
+                        <p>O evento acontecerá em novembro e promete reunir os maiores artistas da atualidade.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+                <!-- Notícia 3 -->
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400" alt="Cantor em show íntimo, segurando microfone e interagindo com o público" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Turnê acústica surpreende com repertório inédito</h3>
+                        <p>O cantor apresentou versões diferentes de seus sucessos e músicas nunca gravadas.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+<section class="highlights">
+        <div class="container">
+            <h2 class="section-title">R&B</h2>
+            <div class="news-grid">
+                <!-- Notícia 1 -->
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400" alt="Artista em estúdio de gravação com fones de ouvido, cercado por equipamentos profissionais" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Novo álbum surpresa de artista indie quebra recordes</h3>
+                        <p>O lançamento surpresa do novo trabalho já alcançou o topo das paradas em 15 países.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+                                <article class="news-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400" alt="Festival de música ao ar livre com palco iluminado e grande multidão aplaudindo" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Festival internacional anuncia line-up com grandes nomes</h3>
+                        <p>O evento acontecerá em novembro e promete reunir os maiores artistas da atualidade.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+                <!-- Notícia 3 -->
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400" alt="Cantor em show íntimo, segurando microfone e interagindo com o público" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Turnê acústica surpreende com repertório inédito</h3>
+                        <p>O cantor apresentou versões diferentes de seus sucessos e músicas nunca gravadas.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+<section class="highlights">
+        <div class="container">
+            <h2 class="section-title">Funk</h2>
+            <div class="news-grid">
+                <!-- Notícia 1 -->
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400" alt="Artista em estúdio de gravação com fones de ouvido, cercado por equipamentos profissionais" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Novo álbum surpresa de artista indie quebra recordes</h3>
+                        <p>O lançamento surpresa do novo trabalho já alcançou o topo das paradas em 15 países.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+                                <article class="news-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400" alt="Festival de música ao ar livre com palco iluminado e grande multidão aplaudindo" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Festival internacional anuncia line-up com grandes nomes</h3>
+                        <p>O evento acontecerá em novembro e promete reunir os maiores artistas da atualidade.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+                <!-- Notícia 3 -->
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400" alt="Cantor em show íntimo, segurando microfone e interagindo com o público" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Turnê acústica surpreende com repertório inédito</h3>
+                        <p>O cantor apresentou versões diferentes de seus sucessos e músicas nunca gravadas.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+<section class="highlights">
+        <div class="container">
+            <h2 class="section-title">Grammy</h2>
+            <div class="news-grid">
+                <!-- Notícia 1 -->
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400" alt="Artista em estúdio de gravação com fones de ouvido, cercado por equipamentos profissionais" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Novo álbum surpresa de artista indie quebra recordes</h3>
+                        <p>O lançamento surpresa do novo trabalho já alcançou o topo das paradas em 15 países.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+                                <article class="news-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400" alt="Festival de música ao ar livre com palco iluminado e grande multidão aplaudindo" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Festival internacional anuncia line-up com grandes nomes</h3>
+                        <p>O evento acontecerá em novembro e promete reunir os maiores artistas da atualidade.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+                <!-- Notícia 3 -->
+                <article class="news-card">
+                    <div class="card-image">
+                        <img src="https://placehold.co/600x400" alt="Cantor em show íntimo, segurando microfone e interagindo com o público" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Turnê acústica surpreende com repertório inédito</h3>
+                        <p>O cantor apresentou versões diferentes de seus sucessos e músicas nunca gravadas.</p>
+                        <a href="#" class="read-more">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+     <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="YouTube">YT</a>
+                </div>
+                <p class="copyright">&copy; 2023 Notícias da Música. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let current = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+        }
+
+        function prevSlide() {
+            current = (current - 1 + slides.length) % slides.length;
+            showSlide(current);
+        }
+
+        // Auto play a cada 5 segundos
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+
+</html>

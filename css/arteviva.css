@@ -1,0 +1,382 @@
+/* .fundo {
+    background-color: hsl(0, 0%, 98%);
+
+} */
+
+/* .topo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+} */
+.fundo {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+/* .custom-navbar .nav-link {
+    color: #1d003d !important;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #D67C3C !important;
+
+} */
+
+.custom-navbar .nav-link {
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+
+    background: linear-gradient(to right, #242424, #353535);
+    /* Azul para roxo */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* para compatibilidade */
+    text-fill-color: transparent;
+}
+
+.custom-navbar .nav-link:hover {
+    background: linear-gradient(to right, #5235a1, #220e58);
+    /* Laranja queimado para dourado */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.custom-navbar .navbar-brand {
+    color: #000000 !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: #F5E1DA;
+    /* Ícone do menu responsivo bege */
+}
+
+.custom-navbar .navbar-toggler-icon {
+    filter: invert(1);
+    /* Deixa o ícone claro */
+}
+
+.topo h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 1.5rem 0 0.5rem;
+    color: #111;
+}
+
+.topo p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    z-index: 2;
+}
+
+.controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.subtitle {
+    text-align: center;
+    color: #111;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .slide .overlay h2 {
+        font-size: 1.2rem;
+    }
+
+    .slide .overlay p {
+        font-size: 0.9rem;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 0.95rem;
+    }
+}
+
+.noticias-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.noticias-main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.grid-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.noticia {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.noticia:hover {
+    transform: scale(1.02);
+}
+
+.noticia img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.noticia h3 {
+    font-size: 1.1rem;
+    padding: 10px;
+    color: #000000;
+}
+
+.sidebar-tags {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-left: 3px solid #1d003d;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-tags h3 {
+    margin-bottom: 1rem;
+    color: #1d003d;
+}
+
+.sidebar-tags ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-tags li {
+    margin-bottom: 10px;
+}
+
+.sidebar-tags a {
+    text-decoration: none;
+    color: #3f80f6;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.sidebar-tags a:hover {
+    color: #895df6;
+}
+
+.leia {
+    display: inline-flex;
+    padding: 0.6rem 1.2rem;
+    background-color: #1a0b36;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+
+}
+
+/* Destaques */
+.highlights {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1a0b36;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.news-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    font-size: 1.3rem;
+    color: #1a0b36;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #1a0b36;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #574593;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a0b36;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
