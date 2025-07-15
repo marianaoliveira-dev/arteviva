@@ -32,222 +32,197 @@
             </div>
         </div>
     </nav>
-    <section class="noticias-container">
-        <div class="noticias-main">
-            <h2>Destaques</h2>
-            <div class="grid-noticias">
-                <article class="noticia">
-                    <img src="image/travis.png" alt="Notícia 1">
-                    <h3>Travis Scott quebra recorde de streaming</h3>
-                </article>
-                <article class="noticia">
-                    <img src="image/nicki.png" alt="Notícia 2">
-                    <h3>Nicki Minaj anuncia nova turnê mundial</h3>
-                </article>
-                <article class="noticia">
-                    <img src="image/billboard.png" alt="Notícia 3">
-                    <h3>Billboard Top 10 tem cinco faixas de um único álbum</h3>
-                </article>
-                <!-- Adicione mais seções aqui -->
+    <main>
+        <div class="carousel">
+            <!-- Slides -->
+            <div class="slide active" style="background-image: url('image/univesity.png');">
+                <div class="overlay">
+                    <h2>Faculdade vai oferecer curso sobre Kendrick Lamar</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('image/travis.png');">
+                <div class="overlay">
+                    <h2>Travis Scott lança 1º clipe do "JACKBOYS 2" com Sheck Wes e Don Toliver</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('image/young.png');">
+                <div class="overlay">
+                    <h2>Young Thug manda recado para rappers que colaboram com a polícia</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                </div>
+            </div>
+            <!-- Controles -->
+            <div class="controls">
+                <button onclick="prevSlide()">❮</button>
+                <button onclick="nextSlide()">❯</button>
             </div>
         </div>
+        <section class="noticias-container">
+                <div class="noticias-main">
+                    <h2>Destaques</h2>
+                    <div class="grid-noticias">
+                        <article class="noticia">
+                            <img src="image/travis.png" alt="Notícia 1">
+                            <h3>Travis Scott quebra recorde de streaming</h3>
+                        </article>
+                        <article class="noticia">
+                            <img src="image/nicki.png" alt="Notícia 2">
+                            <h3>Nicki Minaj anuncia nova turnê mundial</h3>
+                        </article>
+                        <article class="noticia">
+                            <img src="image/billboard.png" alt="Notícia 3">
+                            <h3>Billboard Top 10 tem cinco faixas de um único álbum</h3>
+                        </article>
+                    </div>
+                </div>
 
-        <aside class="sidebar-tags">
-            <h3>Tags Populares</h3>
-            <ul>
-                <li><a href="#">#Trap</a></li>
-                <li><a href="#">#R&B</a></li>
-                <li><a href="#">#Funk</a></li>
-                <li><a href="#">#Grammy</a></li>
-                <li><a href="#">#Entrevistas</a></li>
-            </ul>
-        </aside>
-    </section>
+                <aside class="sidebar-tags">
+                    <h3>Tags Populares</h3>
+                    <ul>
+                        <li><a href="#">#Rap</a></li>
+                        <li><a href="#">#R&B</a></li>
+                        <li><a href="#">#Funk</a></li>
+                        <li><a href="#">#Grammy</a></li>
+                        <li><a href="#">#Entrevistas</a></li>
+                    </ul>
+                </aside>
 
-
-    <div class="carousel">
-        <!-- Slides -->
-        <div class="slide active" style="background-image: url('image/univesity.png');">
-            <div class="overlay">
-                <h2>Faculdade vai oferecer curso sobre Kendrick Lamar</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+        </section>
+        <section class="highlights">
+            <div class="container">
+                <h2 class="section-title">Rap</h2>
+                <div class="news-grid">
+                    <!-- Notícia 1 -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="image/malice.png" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Clash & retorno — Clipse se reúne após 16 anos</h3>
+                            <p>O duo Pusha T e Malice lançou o álbum Let God Sort Em Out, marcado por produção
+                                nostálgica de
+                                Pharrell. Críticos avaliaram como “um dos melhores álbuns de rap de 2025” .</p>
+                            <a href="#" class="read-more">Leia mais</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://placehold.co/600x400" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Polêmica no Wireless: rapper Toronto Top5 esfaqueado</h3>
+                            <p>Durante o festival Wireless em Londres, o rapper Top5, amigo de Drake, foi esfaqueado no
+                                pescoço mas segue estável. O incidente ocorreu horas após apoio a Drake no palco .</p>
+                            <a href="#" class="read-more">Leia mais</a>
+                        </div>
+                    </article>
+                    <!-- Notícia 3 -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="image/pushat.png" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Travis Scott responde a Pusha T, mas leva “roasting”</h3>
+                            <p>Scott lançou o tão aguardado Jackboys 2 em 13 de julho de 2025, com diss-track "CHAMPAIN
+                                &
+                                VACAY" respondendo a Pusha T — mas foi criticado por fãs e críticos como fraco .</p>
+                            <a href="#" class="read-more">Leia mais</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </div>
-        <div class="slide" style="background-image: url('image/travis.png');">
-            <div class="overlay">
-                <h2>Travis Scott lança 1º clipe do "JACKBOYS 2" com Sheck Wes e Don Toliver</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        </section>
+        <section class="highlights">
+            <div class="container">
+                <h2 class="section-title">R&B</h2>
+                <div class="news-grid">
+                    <!-- Notícia 1 -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="image/giveon.png" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Giveon lança álbum “Beloved” e emociona fãs</h3>
+                            <p>O cantor Giveon, agora com 30 anos, lançou Beloved, com o single viral "Twenties",
+                                contando
+                                história real de um relacionamento fracassado.</p>
+                            <a href="#" class="read-more">Leia mais</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="image/ciara.png" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Ciara retorna com o single “Ecstasy”</h3>
+                            <p>A estrela do R&B Ciara lançou “Ecstasy” em 4 de abril de 2025, tornando-se seu sétimo top
+                                10
+                                na parada Hot R&B Songs. Remix com Normani e Teyana Taylor também já saiu.</p>
+                            <a href="#" class="read-more">Leia mais</a>
+                        </div>
+                    </article>
+                    <!-- Notícia 3 -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="image/psiryn.png" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Psiryn: R&B girl group chega ao topo das rádios Adult R&B</h3>
+                            <p>Em fevereiro de 2025, o grupo Psiryn — formado por Anaya Chayenne, Jada Denise e Victoria
+                                McQueen — atingiu o topo da Adult R&B Airplay com o single “Sober”, o primeiro grupo
+                                feminino a isso desde 2003.</p>
+                            <a href="#" class="read-more">Leia mais</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </div>
-        <div class="slide" style="background-image: url('image/young.png');">
-            <div class="overlay">
-                <h2>Young Thug manda recado para rappers que colaboram com a polícia</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </section>
+        <section class="highlights">
+            <div class="container">
+                <h2 class="section-title">Grammy</h2>
+                <div class="news-grid">
+                    <!-- Notícia 1 -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="image/grammy2.png"
+                                alt="Artista em estúdio de gravação com fones de ouvido, cercado por equipamentos profissionais" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Grammy adiciona categorias para 2026</h3>
+                            <p>A Recording Academy anunciou mudanças importantes para o Grammy 2026.</p>
+                            <a href="#" class="read-more">Leia mais</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="image/grammy3.png"
+                                alt="Festival de música ao ar livre com palco iluminado e grande multidão aplaudindo" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Reformulação dos Prêmios de Country</h3>
+                            <p>A Recording Academy anunciou uma grande reorganização dos prêmios para 2026, influenciada
+                                pela vitória de Beyoncé com Cowboy Carter em 2025.</p>
+                            <a href="#" class="read-more">Leia mais</a>
+                        </div>
+                    </article>
+                    <!-- Notícia 3 -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="image/grammy1.png"
+                                alt="Cantor em show íntimo, segurando microfone e interagindo com o público" />
+                        </div>
+                        <div class="card-content">
+                            <h3>Grammy impulsiona apoio a novos profissionais e diversidade</h3>
+                            <p>Em 10 de julho de 2025, a Academy revelou sua nova classe de membros.</p>
+                            <a href="#" class="read-more">Leia mais</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </div>
-        <!-- Controles -->
-        <div class="controls">
-            <button onclick="prevSlide()">❮</button>
-            <button onclick="nextSlide()">❯</button>
-        </div>
-    </div>
-    <section class="highlights">
-        <div class="container">
-            <h2 class="section-title">Trap</h2>
-            <div class="news-grid">
-                <!-- Notícia 1 -->
-                <article class="news-card">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Artista em estúdio de gravação com fones de ouvido, cercado por equipamentos profissionais" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Novo álbum surpresa de artista indie quebra recordes</h3>
-                        <p>O lançamento surpresa do novo trabalho já alcançou o topo das paradas em 15 países.</p>
-                        <a href="#" class="read-more">Leia mais</a>
-                    </div>
-                </article>
-                                <article class="news-card">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Festival de música ao ar livre com palco iluminado e grande multidão aplaudindo" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Festival internacional anuncia line-up com grandes nomes</h3>
-                        <p>O evento acontecerá em novembro e promete reunir os maiores artistas da atualidade.</p>
-                        <a href="#" class="read-more">Leia mais</a>
-                    </div>
-                </article>
-                <!-- Notícia 3 -->
-                <article class="news-card">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Cantor em show íntimo, segurando microfone e interagindo com o público" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Turnê acústica surpreende com repertório inédito</h3>
-                        <p>O cantor apresentou versões diferentes de seus sucessos e músicas nunca gravadas.</p>
-                        <a href="#" class="read-more">Leia mais</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-<section class="highlights">
-        <div class="container">
-            <h2 class="section-title">R&B</h2>
-            <div class="news-grid">
-                <!-- Notícia 1 -->
-                <article class="news-card">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Artista em estúdio de gravação com fones de ouvido, cercado por equipamentos profissionais" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Novo álbum surpresa de artista indie quebra recordes</h3>
-                        <p>O lançamento surpresa do novo trabalho já alcançou o topo das paradas em 15 países.</p>
-                        <a href="#" class="read-more">Leia mais</a>
-                    </div>
-                </article>
-                                <article class="news-card">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Festival de música ao ar livre com palco iluminado e grande multidão aplaudindo" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Festival internacional anuncia line-up com grandes nomes</h3>
-                        <p>O evento acontecerá em novembro e promete reunir os maiores artistas da atualidade.</p>
-                        <a href="#" class="read-more">Leia mais</a>
-                    </div>
-                </article>
-                <!-- Notícia 3 -->
-                <article class="news-card">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Cantor em show íntimo, segurando microfone e interagindo com o público" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Turnê acústica surpreende com repertório inédito</h3>
-                        <p>O cantor apresentou versões diferentes de seus sucessos e músicas nunca gravadas.</p>
-                        <a href="#" class="read-more">Leia mais</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-<section class="highlights">
-        <div class="container">
-            <h2 class="section-title">Funk</h2>
-            <div class="news-grid">
-                <!-- Notícia 1 -->
-                <article class="news-card">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Artista em estúdio de gravação com fones de ouvido, cercado por equipamentos profissionais" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Novo álbum surpresa de artista indie quebra recordes</h3>
-                        <p>O lançamento surpresa do novo trabalho já alcançou o topo das paradas em 15 países.</p>
-                        <a href="#" class="read-more">Leia mais</a>
-                    </div>
-                </article>
-                                <article class="news-card">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Festival de música ao ar livre com palco iluminado e grande multidão aplaudindo" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Festival internacional anuncia line-up com grandes nomes</h3>
-                        <p>O evento acontecerá em novembro e promete reunir os maiores artistas da atualidade.</p>
-                        <a href="#" class="read-more">Leia mais</a>
-                    </div>
-                </article>
-                <!-- Notícia 3 -->
-                <article class="news-card">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Cantor em show íntimo, segurando microfone e interagindo com o público" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Turnê acústica surpreende com repertório inédito</h3>
-                        <p>O cantor apresentou versões diferentes de seus sucessos e músicas nunca gravadas.</p>
-                        <a href="#" class="read-more">Leia mais</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-<section class="highlights">
-        <div class="container">
-            <h2 class="section-title">Grammy</h2>
-            <div class="news-grid">
-                <!-- Notícia 1 -->
-                <article class="news-card">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Artista em estúdio de gravação com fones de ouvido, cercado por equipamentos profissionais" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Novo álbum surpresa de artista indie quebra recordes</h3>
-                        <p>O lançamento surpresa do novo trabalho já alcançou o topo das paradas em 15 países.</p>
-                        <a href="#" class="read-more">Leia mais</a>
-                    </div>
-                </article>
-                                <article class="news-card">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Festival de música ao ar livre com palco iluminado e grande multidão aplaudindo" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Festival internacional anuncia line-up com grandes nomes</h3>
-                        <p>O evento acontecerá em novembro e promete reunir os maiores artistas da atualidade.</p>
-                        <a href="#" class="read-more">Leia mais</a>
-                    </div>
-                </article>
-                <!-- Notícia 3 -->
-                <article class="news-card">
-                    <div class="card-image">
-                        <img src="https://placehold.co/600x400" alt="Cantor em show íntimo, segurando microfone e interagindo com o público" />
-                    </div>
-                    <div class="card-content">
-                        <h3>Turnê acústica surpreende com repertório inédito</h3>
-                        <p>O cantor apresentou versões diferentes de seus sucessos e músicas nunca gravadas.</p>
-                        <a href="#" class="read-more">Leia mais</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-     <!-- Rodapé -->
+        </section>
+    </main>
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -257,7 +232,7 @@
                     <a href="#" aria-label="Instagram">IG</a>
                     <a href="#" aria-label="YouTube">YT</a>
                 </div>
-                <p class="copyright">&copy; 2023 Notícias da Música. Todos os direitos reservados.</p>
+                <p class="copyright">&copy; 2025 ARTEVIVA. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
